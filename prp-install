@@ -1,1 +1,10 @@
+cd /home/$USER/ && mkdir .prp
+if [ $? -eq 0 ]; then
+echo "Обнаружена предыдущая установка! Удаляем прошлые файлы..."
+cd /home/$USER/ && rm -Rf bin/prepare
+cd /home/$USER/ && rm -Rf .prp
+    echo "Начинаю установку..."
+else
+    echo "Начинаю установку..."
+fi
 
