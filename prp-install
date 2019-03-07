@@ -8,3 +8,6 @@ else
     echo "Начинаю установку..."
 fi
 
+echo "Как вас зовут?"
+read name
+cd /home/$USER/.prp/ && echo "username=$name" -> prp.cfg
